@@ -1,3 +1,4 @@
+import PageHeader from '../common/PageHeader';
 import DynamicTable from '../components/DynamicTable';
 import DemoPageHeader from './DemoPageHeader';
 
@@ -28,16 +29,19 @@ const DynamicTableDemo = () => {
     const rowData4 = [row13Data,row14Data,row15Data]
 
     return(
-        <div>
-            <DemoPageHeader componentName='DynamicTable'/>
-            <h5>A simple table:</h5>
-            <DynamicTable headerColumns={headerColumns1} columnsTypes={columnTypes1} data={rowData1} />
-            <br/><br/>
-            <h5>A table with links and more columns:</h5>
-            <DynamicTable headerColumns={headerColumns3} columnsTypes={columnTypes3} data={rowData3} />
-            <br/><br/>
-            <h5>A table with images:</h5>
-            <DynamicTable headerColumns={headerColumns4} columnsTypes={columnTypes4} data={rowData4} />
+        <div id="body">
+                <PageHeader />
+            <div id="main">
+                <DemoPageHeader componentName='DynamicTable'/>
+                <h5>1 - A simple table:</h5>
+                <DynamicTable headerColumns={headerColumns1} columnsTypes={columnTypes1} data={rowData1} />
+                <br/><br/>
+                <h5>2 - A table with links and more columns:</h5>
+                <DynamicTable headerColumns={headerColumns3} columnsTypes={columnTypes3} data={rowData3} />
+                <br/><br/>
+                <h5>3 - A table with images:</h5>
+                <DynamicTable headerColumns={headerColumns4} columnsTypes={columnTypes4} data={rowData4} />
+            </div>
         </div>
     )
 }

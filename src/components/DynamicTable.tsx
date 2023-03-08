@@ -76,7 +76,7 @@ const LinkCell : React.FC<CellProps> = ({content}) => {
 
 const ImageCell : React.FC<CellProps> = ({content}) => {
     return (
-        <td><img src={"/img/person3.png"}/></td>
+        <td><img src={content}/></td>
     )
 }
 
