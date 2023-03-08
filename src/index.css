@@ -43,13 +43,21 @@ body {
 }
 
 #demoPageHeader{
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
   font-style: italic;
+  padding-top: 10px;
 }
 
 .componentName{
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  font-size: 20px;
   color: rgb(250, 69, 217);
 }
-
+.componentDescription{
+  font-size: 15px;
+  font-style: normal;
+  color: #565656;
+}

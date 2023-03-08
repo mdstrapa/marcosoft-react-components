@@ -12,7 +12,7 @@ const SimpleListDemo = () => {
         <div id="body">
                 <PageHeader />
             <div id="main">
-                <DemoPageHeader componentName="SimpleList"/>
+                <DemoPageHeader componentName="SimpleList" componentDescription="A list that can render with or without links"/>
                 <h6>1 - A simple list:</h6>
                 <SimpleList items={simpleList1} links={[]}/>
                 <br/><br/>
