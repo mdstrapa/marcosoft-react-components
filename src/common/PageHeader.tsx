@@ -1,7 +1,7 @@
 const PageHeader = () => {
     return(
         <div id="pageHeader">
-            MarcoSoft Components
+            MarcoSoft React Components
         </div>
     )
 }
