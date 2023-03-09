@@ -61,3 +61,8 @@ body {
   font-style: normal;
   color: #565656;
 }
+
+.propName{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+}

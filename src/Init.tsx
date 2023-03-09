@@ -15,7 +15,7 @@ const Init = () => {
                 <br/>
                 <h6>Here you will find information about each available component.</h6>
                 <br/>
-                <h6>Click to see more details about each component:</h6>
+                <h6>Click to see more details:</h6>
                 <SimpleList items={componentList} links={componentLinks}/>
             </div>
         </div>
