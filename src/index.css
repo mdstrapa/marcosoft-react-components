@@ -39,7 +39,15 @@ body {
   font-size: 30px;
   background-color: #eaf8ff;
   background-image: linear-gradient(62deg, #eaf8ff 0%, #f1e2fb 100%);
-  
+}
+
+#pageFooter{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f1e2fb;
+  background-image: linear-gradient(62deg, #f1e2fb 0%, #eaf8ff 100%);
 }
 
 #demoPageHeader{

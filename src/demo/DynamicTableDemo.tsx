@@ -1,6 +1,7 @@
 import PageHeader from '../common/PageHeader';
 import MSDynamicTable from '../components/MSDynamicTable';
 import DemoPageHeader from './DemoPageHeader';
+import PageFooter from "../common/PageFooter";
 
 const DynamicTableDemo = () => {
 
@@ -50,6 +51,7 @@ const DynamicTableDemo = () => {
                 <h5>3 - A table with images:</h5>
                 <MSDynamicTable headerColumns={headerColumns4} columnsTypes={columnTypes4} data={rowData4} />
             </div>
+            <PageFooter />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import PageHeader from "./common/PageHeader";
 import MSSimpleList from "./components/MSSimpleList";
+import PageFooter from "./common/PageFooter";
 
 const Init = () => {
 
@@ -18,6 +19,7 @@ const Init = () => {
                 <h6>Click to see more details:</h6>
                 <MSSimpleList items={componentList} links={componentLinks}/>
             </div>
+            <PageFooter />
         </div>
     )
 }

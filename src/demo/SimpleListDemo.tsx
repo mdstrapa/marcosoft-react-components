@@ -1,6 +1,7 @@
 import PageHeader from "../common/PageHeader";
 import MSSimpleList from "../components/MSSimpleList";
 import DemoPageHeader from "./DemoPageHeader";
+import PageFooter from "../common/PageFooter";
 
 const SimpleListDemo = () => {
 
@@ -26,6 +27,7 @@ const SimpleListDemo = () => {
                 <h6>2 - A simple list with links:</h6>
                 <MSSimpleList items={simpleList2} links={simpleList2Links}/>
             </div>
+            <PageFooter />
         </div>
     )
 }

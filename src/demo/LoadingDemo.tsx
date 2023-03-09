@@ -1,6 +1,7 @@
 import MSLoading from "../components/MSLoading";
 import PageHeader from "../common/PageHeader";
 import DemoPageHeader from "./DemoPageHeader";
+import PageFooter from "../common/PageFooter";
 
 const LoadingDemo = () => {
 
@@ -24,6 +25,7 @@ const LoadingDemo = () => {
                 <h6>2 - With a custom message:</h6>
                 <MSLoading customMessage={customMessage} />
             </div>
+            <PageFooter />
         </div>
     )
 }

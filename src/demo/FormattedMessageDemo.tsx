@@ -1,6 +1,7 @@
 import PageHeader from "../common/PageHeader";
 import MSFormatteMessage from "../components/MSFormattedMessage";
 import DemoPageHeader from "./DemoPageHeader";
+import PageFooter from "../common/PageFooter";
 
 const FormatteMessageDemo = () => {
 
@@ -31,7 +32,7 @@ const FormatteMessageDemo = () => {
                 <MSFormatteMessage message="There was an error" style="danger"/>
 
             </div>
-            
+            <PageFooter />
         </div>
     )
 }
