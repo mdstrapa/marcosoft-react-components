@@ -1,7 +1,7 @@
 import React from "react";
 
 interface MSLoadingProps {
-    customMessage: string
+    customMessage?: string
 }
 
 

@@ -1,12 +1,12 @@
 import PageHeader from "../common/PageHeader";
-import MSFormatteMessage from "../components/MSFormattedMessage";
+import MSFormatteMessage, {MessageStyle} from "../components/MSFormattedMessage";
 import DemoPageHeader from "./DemoPageHeader";
 import PageFooter from "../common/PageFooter";
 
 const FormatteMessageDemo = () => {
 
     const propsNames = ["message","style"]
-    const propsDescription = ["The message to present","The style of the message. Valid values ar: info|warning|success|danger"]
+    const propsDescription = ["The message to present","The style of the message. Valid values come from MessageStyle enum"]
 
     return(
         <div id="body">
@@ -20,16 +20,16 @@ const FormatteMessageDemo = () => {
                 />
                 
                 <h6>1 - A message in the INFO style:</h6>
-                <MSFormatteMessage message="This is only an iformation to the user" style="info"/>
+                <MSFormatteMessage message="This is only an iformation to the user" style={MessageStyle.INFO}/>
                 <br/><br/>
                 <h6>2 - A message in the WARNING style:</h6>
-                <MSFormatteMessage message="This is a message to warn the user about something" style="warning"/>
+                <MSFormatteMessage message="This is a message to warn the user about something" style={MessageStyle.WARNING}/>
                 <br/><br/>
                 <h6>3 - A message of SUCCESS to the user:</h6>
-                <MSFormatteMessage message="Operation succeed" style="success"/>
+                <MSFormatteMessage message="Operation succeed" style={MessageStyle.SUCCESS}/>
                 <br/><br/>
                 <h6>4 - A message of DANGER or ERROR to the user:</h6>
-                <MSFormatteMessage message="There was an error" style="danger"/>
+                <MSFormatteMessage message="There was an error" style={MessageStyle.DANGER}/>
 
             </div>
             <PageFooter />

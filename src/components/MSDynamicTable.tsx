@@ -1,9 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.css';
-
 interface MSDynamicTableProps {
     headerColumns: string[]
-    columnsTypes: string[]
+    columnsTypes: ColumnType[]
     data: string[][]
+}
+
+export enum ColumnType {
+    LINK,TEXT,IMAGE
 }
 
 interface HeaderRowProps {
@@ -11,7 +13,7 @@ interface HeaderRowProps {
 }
 
 interface RowProps {
-    columnsTypes: string[]
+    columnsTypes: ColumnType[]
     columnsData: string[]
 }
 
@@ -49,12 +51,13 @@ const Row :React.FC<RowProps> = ({columnsTypes,columnsData}) => {
         <tr>
             {columnsData.map(function(c,index)
             {
-                if (columnsTypes[index] == "link"){
-                    return <LinkCell content={c} key={index}/>
-                }else if (columnsTypes[index] == "text"){
-                    return <TextCell content={c} key={index}/>
-                }else{
-                    return <ImageCell content={c} key={index}/>
+                switch (columnsTypes[index]){
+                    case ColumnType.LINK:
+                        return <LinkCell content={c} key={index}/>
+                    case ColumnType.TEXT:
+                        return <TextCell content={c} key={index}/>
+                    case ColumnType.IMAGE:
+                        return <ImageCell content={c} key={index}/>
                 }
             }
             )}

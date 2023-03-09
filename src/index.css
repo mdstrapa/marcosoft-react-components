@@ -33,6 +33,15 @@ body {
   
 }
 
+#mainComponentList{
+  font-size: 18px;
+  padding: 10px;
+}
+
+#mainComponentList li{
+  margin: 10px 0;
+}
+
 #pageHeader{
   padding-left: 10px;
   padding-top: 3px;

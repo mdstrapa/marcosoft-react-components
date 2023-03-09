@@ -20,7 +20,7 @@ const LoadingDemo = () => {
                     componentPropsDescription={propsDescription}
                 />
                 <h6>1 - The default loading:</h6>
-                <MSLoading customMessage="" />
+                <MSLoading />
                 <br/><br/>
                 <h6>2 - With a custom message:</h6>
                 <MSLoading customMessage={customMessage} />
