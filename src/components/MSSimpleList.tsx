@@ -1,9 +1,9 @@
-interface SimpleListProps {
+interface MSSimpleListProps {
     items: string[]
     links: string[]
 }
 
-const SimpleList:React.FC<SimpleListProps> = ({items,links}) => {
+const MSSimpleList:React.FC<MSSimpleListProps> = ({items,links}) => {
     return(
         <ul>
             {items.map(
@@ -21,4 +21,4 @@ const SimpleList:React.FC<SimpleListProps> = ({items,links}) => {
     )
 }
 
-export default SimpleList;
+export default MSSimpleList;

@@ -1,5 +1,5 @@
 import PageHeader from "../common/PageHeader";
-import SimpleList from "../components/SimpleList";
+import MSSimpleList from "../components/MSSimpleList";
 import DemoPageHeader from "./DemoPageHeader";
 
 const SimpleListDemo = () => {
@@ -15,16 +15,16 @@ const SimpleListDemo = () => {
                 <PageHeader />
             <div id="main">
                 <DemoPageHeader
-                    componentName="SimpleList"
+                    componentName="MSSimpleList"
                     componentDescription="A list that can render with or without links"
                     componentPropsNames={propsNames}
                     componentPropsDescription={propsDescription}
                 />
                 <h6>1 - A simple list:</h6>
-                <SimpleList items={simpleList1} links={[]}/>
+                <MSSimpleList items={simpleList1} links={[]}/>
                 <br/><br/>
                 <h6>2 - A simple list with links:</h6>
-                <SimpleList items={simpleList2} links={simpleList2Links}/>
+                <MSSimpleList items={simpleList2} links={simpleList2Links}/>
             </div>
         </div>
     )

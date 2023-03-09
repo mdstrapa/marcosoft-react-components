@@ -1,5 +1,5 @@
 import PageHeader from "../common/PageHeader";
-import FormattedMessage from "../components/FormattedMessage";
+import MSFormatteMessage from "../components/MSFormattedMessage";
 import DemoPageHeader from "./DemoPageHeader";
 
 const FormatteMessageDemo = () => {
@@ -19,16 +19,16 @@ const FormatteMessageDemo = () => {
                 />
                 
                 <h6>1 - A message in the INFO style:</h6>
-                <FormattedMessage message="This is only an iformation to the user" style="info"/>
+                <MSFormatteMessage message="This is only an iformation to the user" style="info"/>
                 <br/><br/>
                 <h6>2 - A message in the WARNING style:</h6>
-                <FormattedMessage message="This is a message to warn the user about something" style="warning"/>
+                <MSFormatteMessage message="This is a message to warn the user about something" style="warning"/>
                 <br/><br/>
                 <h6>3 - A message of SUCCESS to the user:</h6>
-                <FormattedMessage message="Operation succeed" style="success"/>
+                <MSFormatteMessage message="Operation succeed" style="success"/>
                 <br/><br/>
                 <h6>4 - A message of DANGER or ERROR to the user:</h6>
-                <FormattedMessage message="There was an error" style="danger"/>
+                <MSFormatteMessage message="There was an error" style="danger"/>
 
             </div>
             

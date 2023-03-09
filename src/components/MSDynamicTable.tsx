@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 
-interface DynamicTableProps {
+interface MSDynamicTableProps {
     headerColumns: string[]
     columnsTypes: string[]
     data: string[][]
@@ -19,7 +19,7 @@ interface CellProps {
     content: string;
 }
 
-const DynamicTable : React.FC<DynamicTableProps> = ({headerColumns,columnsTypes,data}) => {
+const MSDynamicTable : React.FC<MSDynamicTableProps> = ({headerColumns,columnsTypes,data}) => {
 
     return(
         <div>
@@ -80,4 +80,4 @@ const ImageCell : React.FC<CellProps> = ({content}) => {
     )
 }
 
-export default DynamicTable;
+export default MSDynamicTable;

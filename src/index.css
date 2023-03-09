@@ -66,3 +66,16 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-style: normal;
 }
+
+#loading{
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+.loadingCustomMessage{
+  font-style: italic;
+  color: #565656;
+}

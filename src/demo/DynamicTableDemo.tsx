@@ -1,5 +1,5 @@
 import PageHeader from '../common/PageHeader';
-import DynamicTable from '../components/DynamicTable';
+import MSDynamicTable from '../components/MSDynamicTable';
 import DemoPageHeader from './DemoPageHeader';
 
 const DynamicTableDemo = () => {
@@ -36,19 +36,19 @@ const DynamicTableDemo = () => {
                 <PageHeader />
             <div id="main">
                 <DemoPageHeader
-                    componentName='DynamicTable'
+                    componentName='MSDynamicTable'
                     componentDescription='A table that can be dynamically rendered  based on the columns and data type of the data source array'
                     componentPropsNames={propsNames}
                     componentPropsDescription={propsDescription}
                 />
                 <h5>1 - A simple table:</h5>
-                <DynamicTable headerColumns={headerColumns1} columnsTypes={columnTypes1} data={rowData1} />
+                <MSDynamicTable headerColumns={headerColumns1} columnsTypes={columnTypes1} data={rowData1} />
                 <br/><br/>
                 <h5>2 - A table with links and more columns:</h5>
-                <DynamicTable headerColumns={headerColumns3} columnsTypes={columnTypes3} data={rowData3} />
+                <MSDynamicTable headerColumns={headerColumns3} columnsTypes={columnTypes3} data={rowData3} />
                 <br/><br/>
                 <h5>3 - A table with images:</h5>
-                <DynamicTable headerColumns={headerColumns4} columnsTypes={columnTypes4} data={rowData4} />
+                <MSDynamicTable headerColumns={headerColumns4} columnsTypes={columnTypes4} data={rowData4} />
             </div>
         </div>
     )

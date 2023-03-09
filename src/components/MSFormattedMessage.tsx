@@ -1,9 +1,9 @@
-interface FormattedMessageProps {
+interface MSFormattedMessageProps {
     message: string
     style: string
 }
 
-const FormatteMessage:React.FC<FormattedMessageProps> = ({message,style}) => {
+const MSFormatteMessage:React.FC<MSFormattedMessageProps> = ({message,style}) => {
     
     let messageStyle = "";
     if (style == "info") {
@@ -22,4 +22,4 @@ const FormatteMessage:React.FC<FormattedMessageProps> = ({message,style}) => {
         </div>
     )
 }
-export default FormatteMessage;
+export default MSFormatteMessage;
