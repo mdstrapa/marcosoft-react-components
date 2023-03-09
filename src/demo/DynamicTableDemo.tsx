@@ -32,7 +32,7 @@ const DynamicTableDemo = () => {
         <div id="body">
                 <PageHeader />
             <div id="main">
-                <DemoPageHeader componentName='DynamicTable' componentDescription='A table that can be rendered dynamically basead on the columns and data type of the data source array'/>
+                <DemoPageHeader componentName='DynamicTable' componentDescription='A table that can be dynamically rendered  based on the columns and data type of the data source array'/>
                 <h5>1 - A simple table:</h5>
                 <DynamicTable headerColumns={headerColumns1} columnsTypes={columnTypes1} data={rowData1} />
                 <br/><br/>
