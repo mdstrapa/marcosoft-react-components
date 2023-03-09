@@ -4,8 +4,8 @@ import PageFooter from "./common/PageFooter";
 import 'bootstrap/dist/css/bootstrap.css';
 const Init = () => {
 
-    const componentList = ["<MSDynamicTable>","<MSFormattedMessage>","<MSLoading>","<MSSimpleList>"]
-    const componentLinks = ["/dynamicTableDemo","/formattedMessageDemo","/loadingDemo","/simpleListDemo"]
+    const componentList = ["<MSDynamicTable>","<MSFormattedMessage>","<MSHorizontalList>","<MSLoading>","<MSSimpleList>"]
+    const componentLinks = ["/dynamicTableDemo","/formattedMessageDemo","/horizontalListDemo","/loadingDemo","/simpleListDemo"]
 
     return(
         <div id="body">

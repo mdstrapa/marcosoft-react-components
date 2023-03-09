@@ -3,7 +3,7 @@ import MSFormatteMessage, {MessageStyle} from "../components/MSFormattedMessage"
 import DemoPageHeader from "./DemoPageHeader";
 import PageFooter from "../common/PageFooter";
 
-const FormatteMessageDemo = () => {
+const FormattedMessageDemo = () => {
 
     const propsNames = ["message","style"]
     const propsDescription = ["The message to present","The style of the message. Valid values come from MessageStyle enum"]
@@ -37,4 +37,4 @@ const FormatteMessageDemo = () => {
     )
 }
 
-export default FormatteMessageDemo;
+export default FormattedMessageDemo;
