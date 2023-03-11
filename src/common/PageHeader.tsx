@@ -1,7 +1,7 @@
 const PageHeader = () => {
     return(
         <div id="pageHeader">
-            MarcoSoft React Components
+            <h2><span className="pageTitle">MarcoSoft React Components</span></h2>
         </div>
     )
 }

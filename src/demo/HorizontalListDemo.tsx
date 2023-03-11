@@ -1,26 +1,25 @@
-import MSHorizontalList from "../components/MSHorizontalList";
+import {MSHorizontalList} from "../components/MSHorizontalList";
 import PageHeader from "../common/PageHeader";
 import PageFooter from "../common/PageFooter";
-import DemoPageHeader from "./DemoPageHeader";
+import DemoPageHeader from "../common/DemoPageHeader";
 
-const HorizontalListDemo = () => {
+import {MSHorizontalListInfo} from "../common/ComponentInfo"
 
+export const HorizontalListDemo = () => {
 
     const horizontalList1 = ["Red","Blue","Yellow","Brown","Gray","Green","Pink","White","Black","Magenta"]
     const horizontalList2 = ["Dell","Google","Apple","Samsung","Huawei","Microsoft","Asus","HP"]
     const horizontalList2Links = ["/link1","/link2","/link3","/link4","/link5","/link6","/link7","/link8"]
-    const propsNames = ["items","links"]
-    const propsDescription = ["The values to create a list","The links associated to each value in the list"]
 
     return(
         <div id="body">
             <PageHeader />
             <div id="main">
                 <DemoPageHeader
-                    componentName="MSHorizontalList"
-                    componentDescription="A list that can render with or without links horizontally"
-                    componentPropsNames={propsNames}
-                    componentPropsDescription={propsDescription}
+                    componentName={MSHorizontalListInfo.componentName}
+                    componentDescription={MSHorizontalListInfo.componentDescription}
+                    componentPropsNames={MSHorizontalListInfo.propsNames}
+                    componentPropsDescription={MSHorizontalListInfo.propsDescriptions}
                 />
                 <h6>1 - A horizontal list:</h6>
                 <MSHorizontalList items={horizontalList1} links={[]}/>
@@ -32,5 +31,3 @@ const HorizontalListDemo = () => {
         </div>
     )
 }
-
-export default HorizontalListDemo;

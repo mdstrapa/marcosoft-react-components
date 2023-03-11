@@ -1,9 +1,9 @@
 import './App.css';
-import DynamicTableDemo from './demo/DynamicTableDemo';
-import SimpleListDemo from './demo/SimpleListDemo';
-import FormattedMessageDemo from './demo/FormattedMessageDemo';
-import LoadingDemo from "./demo/LoadingDemo";
-import HorizontalListDemo from "./demo/HorizontalListDemo";
+import {DynamicTableDemo} from './demo/DynamicTableDemo';
+import {SimpleListDemo} from './demo/SimpleListDemo';
+import {FormattedMessageDemo} from './demo/FormattedMessageDemo';
+import {LoadingDemo} from "./demo/LoadingDemo";
+import {HorizontalListDemo} from "./demo/HorizontalListDemo";
 import {Route, Routes } from 'react-router-dom';
 import Init from './Init';
 

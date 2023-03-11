@@ -21,7 +21,7 @@ interface CellProps {
     content: string;
 }
 
-const MSDynamicTable : React.FC<MSDynamicTableProps> = ({headerColumns,columnsTypes,data}) => {
+export const MSDynamicTable : React.FC<MSDynamicTableProps> = ({headerColumns,columnsTypes,data}) => {
 
     return(
         <div>
@@ -82,5 +82,3 @@ const ImageCell : React.FC<CellProps> = ({content}) => {
         <td><img src={content}/></td>
     )
 }
-
-export default MSDynamicTable;

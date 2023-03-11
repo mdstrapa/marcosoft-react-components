@@ -5,7 +5,7 @@ interface MSLoadingProps {
 }
 
 
-const MSLoading:React.FC<MSLoadingProps> = ({customMessage}) => {
+export const MSLoading:React.FC<MSLoadingProps> = ({customMessage}) => {
 
     const writeCustomMessage = () => {
         if (customMessage != "") {
@@ -22,5 +22,3 @@ const MSLoading:React.FC<MSLoadingProps> = ({customMessage}) => {
         </div>
     )
 }
-
-export default MSLoading;

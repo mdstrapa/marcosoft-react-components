@@ -3,7 +3,7 @@ interface MSSimpleListProps {
     links: string[]
 }
 
-const MSSimpleList:React.FC<MSSimpleListProps> = ({items,links}) => {
+export const MSSimpleList:React.FC<MSSimpleListProps> = ({items,links}) => {
     return(
         <ul>
             {items.map(
@@ -20,5 +20,3 @@ const MSSimpleList:React.FC<MSSimpleListProps> = ({items,links}) => {
         </ul>
     )
 }
-
-export default MSSimpleList;

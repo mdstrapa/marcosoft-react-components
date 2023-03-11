@@ -6,7 +6,7 @@ interface MSHorizontalListProps{
 }
 
 
-const MSHorizontalList:React.FC<MSHorizontalListProps> = ({items,links}) => {
+export const MSHorizontalList:React.FC<MSHorizontalListProps> = ({items,links}) => {
 
     let columnsTemplate: string
     columnsTemplate = ""
@@ -30,5 +30,3 @@ const MSHorizontalList:React.FC<MSHorizontalListProps> = ({items,links}) => {
         </div>
     )
 }
-
-export default MSHorizontalList;

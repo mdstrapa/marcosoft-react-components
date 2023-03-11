@@ -1,22 +1,19 @@
 import PageHeader from "../common/PageHeader";
-import MSFormatteMessage, {MessageStyle} from "../components/MSFormattedMessage";
-import DemoPageHeader from "./DemoPageHeader";
+import {MSFormatteMessage, MessageStyle} from "../components/MSFormattedMessage";
+import DemoPageHeader from "../common/DemoPageHeader";
 import PageFooter from "../common/PageFooter";
-
-const FormattedMessageDemo = () => {
-
-    const propsNames = ["message","style"]
-    const propsDescription = ["The message to present","The style of the message. Valid values come from MessageStyle enum"]
+import {MSFormattedMessageInfo} from "../common/ComponentInfo"
+export const FormattedMessageDemo = () => {
 
     return(
         <div id="body">
             <PageHeader />
             <div id="main">
                 <DemoPageHeader
-                    componentName="FormattedMessage"
-                    componentDescription="A message automatically formatted based on a given style"
-                    componentPropsNames={propsNames}
-                    componentPropsDescription={propsDescription}
+                    componentName={MSFormattedMessageInfo.componentName}
+                    componentDescription={MSFormattedMessageInfo.componentDescription}
+                    componentPropsNames={MSFormattedMessageInfo.propsNames}
+                    componentPropsDescription={MSFormattedMessageInfo.propsDescriptions}
                 />
                 
                 <h6>1 - A message in the INFO style:</h6>
@@ -36,5 +33,3 @@ const FormattedMessageDemo = () => {
         </div>
     )
 }
-
-export default FormattedMessageDemo;

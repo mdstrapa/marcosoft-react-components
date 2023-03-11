@@ -1,9 +1,11 @@
 import PageHeader from '../common/PageHeader';
-import MSDynamicTable, {ColumnType} from '../components/MSDynamicTable';
-import DemoPageHeader from './DemoPageHeader';
+import {MSDynamicTable , ColumnType} from '../components/MSDynamicTable';
+import DemoPageHeader from '../common/DemoPageHeader';
 import PageFooter from "../common/PageFooter";
 
-const DynamicTableDemo = () => {
+import {MSDynamicTableInfo} from "../common/ComponentInfo"
+
+export const DynamicTableDemo = () => {
 
     const headerColumns1 = ["Band","Album Name", "Release Date","Style"]
     const columnTypes1 = [ColumnType.TEXT,ColumnType.TEXT,ColumnType.TEXT,ColumnType.TEXT]
@@ -29,18 +31,15 @@ const DynamicTableDemo = () => {
     const row15Data = ["/someLinkTable4/3", "Eric Gonzales","/img/person3.png","Divorced"]
     const rowData4 = [row13Data,row14Data,row15Data]
 
-    const propsNames = ["headerColumns","columnsTypes","data"]
-    const propsDescription = ["A list of the names for the Header Row","A list defining the type of each column. Valid values come from ColumnType enum","The data to fill the table"]
-
     return(
         <div id="body">
                 <PageHeader />
             <div id="main">
                 <DemoPageHeader
-                    componentName='MSDynamicTable'
-                    componentDescription='A table that can be dynamically rendered  based on the columns and data type of the data source array'
-                    componentPropsNames={propsNames}
-                    componentPropsDescription={propsDescription}
+                    componentName={MSDynamicTableInfo.componentName}
+                    componentDescription={MSDynamicTableInfo.componentDescription}
+                    componentPropsNames={MSDynamicTableInfo.propsNames}
+                    componentPropsDescription={MSDynamicTableInfo.propsDescriptions}
                 />
                 <h5>1 - A simple table:</h5>
                 <MSDynamicTable headerColumns={headerColumns1} columnsTypes={columnTypes1} data={rowData1} />
@@ -55,5 +54,3 @@ const DynamicTableDemo = () => {
         </div>
     )
 }
-
-export default DynamicTableDemo;

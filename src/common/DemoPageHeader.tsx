@@ -1,3 +1,5 @@
+import React from "react";
+
 interface DemoPageHeaderProps{
     componentName: string
     componentDescription: string
@@ -6,11 +8,15 @@ interface DemoPageHeaderProps{
 }
 
 const DemoPageHeader:React.FC<DemoPageHeaderProps> = ({componentName,componentDescription,componentPropsNames,componentPropsDescription}) => {
-    // @ts-ignore
+
     return(
         <div id="demoPageHeader">
             
-            <div><span className="componentName">&lt;{componentName}&gt;</span><span className="componentDescription"> - {componentDescription}</span></div>
+            <div>
+                <span className="componentName">&lt;{componentName}&gt;</span>
+                <br/>
+                <span className="componentDescription">{componentDescription}</span>
+            </div>
             <br/>
             <div><b>Props:</b>
                 <ul>
@@ -19,7 +25,11 @@ const DemoPageHeader:React.FC<DemoPageHeaderProps> = ({componentName,componentDe
 
             </div>
             <br/>
-            <div><h6><a href='/'>Go back</a></h6></div>
+            <div>
+                <a href="/" className="btn btn-primary">
+                    Go Back
+                </a>
+            </div>
             <br/>
         </div>
     )

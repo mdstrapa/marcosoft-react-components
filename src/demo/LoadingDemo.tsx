@@ -1,23 +1,21 @@
-import MSLoading from "../components/MSLoading";
+import {MSLoading} from "../components/MSLoading";
 import PageHeader from "../common/PageHeader";
-import DemoPageHeader from "./DemoPageHeader";
+import DemoPageHeader from "../common/DemoPageHeader";
 import PageFooter from "../common/PageFooter";
-
-const LoadingDemo = () => {
+import {MSLoadingInfo} from "../common/ComponentInfo"
+export const LoadingDemo = () => {
 
     const customMessage = "Read a book while you wait for the page to load"
-    const propsNames = ["customMessage"]
-    const propsDescription = ["A custom message to present to the user along with the default behavior. It can be leave empty."]
 
     return(
         <div id="body">
             <PageHeader />
             <div id="main">
                 <DemoPageHeader
-                    componentName="MSLoading"
-                    componentDescription="A simple loading component"
-                    componentPropsNames={propsNames}
-                    componentPropsDescription={propsDescription}
+                    componentName={MSLoadingInfo.componentName}
+                    componentDescription={MSLoadingInfo.componentDescription}
+                    componentPropsNames={MSLoadingInfo.propsNames}
+                    componentPropsDescription={MSLoadingInfo.propsDescriptions}
                 />
                 <h6>1 - The default loading:</h6>
                 <MSLoading />
@@ -29,5 +27,3 @@ const LoadingDemo = () => {
         </div>
     )
 }
-
-export default LoadingDemo;

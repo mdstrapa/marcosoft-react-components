@@ -10,7 +10,7 @@ export enum MessageStyle {
     DANGER = 'danger'
 }
 
-const MSFormatteMessage:React.FC<MSFormattedMessageProps> = ({message,style}) => {
+export const MSFormatteMessage:React.FC<MSFormattedMessageProps> = ({message,style}) => {
     
     let messageStyle = "";
 
@@ -31,20 +31,9 @@ const MSFormatteMessage:React.FC<MSFormattedMessageProps> = ({message,style}) =>
             messageStyle = ""
     }
 
-/*    if (style == "info") {
-        messageStyle = "alert alert-info";
-    }else if (style == "warning") {
-        messageStyle = "alert alert-warning";
-    }else if (style == "success") {
-        messageStyle = "alert alert-success";
-    }else if (style == "danger") {
-        messageStyle = "alert alert-danger";
-    }*/
-
     return(
         <div className={messageStyle}>
             {message}
         </div>
     )
 }
-export default MSFormatteMessage;
