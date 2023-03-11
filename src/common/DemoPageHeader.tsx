@@ -13,7 +13,7 @@ const DemoPageHeader:React.FC<DemoPageHeaderProps> = ({componentName,componentDe
         <div id="demoPageHeader">
             
             <div>
-                <span className="componentName">&lt;{componentName}&gt;</span>
+                <span className="componentName">{componentName}</span>
                 <br/>
                 <span className="componentDescription">{componentDescription}</span>
             </div>

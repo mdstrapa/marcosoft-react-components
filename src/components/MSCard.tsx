@@ -1,12 +1,12 @@
 import React from "react";
 
 interface ComponentCardProps{
-    componentName: string
-    componentDescription: string
+    title: string
+    description: string
     link: string
 }
 
-export const MSComponentCard:React.FC<ComponentCardProps> = ({componentName,componentDescription,link}) => {
+export const MSCard:React.FC<ComponentCardProps> = ({title,description,link}) => {
     return(
         <div>
             <div className="col d-flex align-items-start">
@@ -15,8 +15,8 @@ export const MSComponentCard:React.FC<ComponentCardProps> = ({componentName,comp
                     <svg className="bi" width="1em" height="1em" />
                 </div>
                 <div>
-                    <h3 className="fs-2"><span className="componentName">&lt;{componentName}&gt;</span></h3>
-                    <p>{componentDescription}</p>
+                    <h3 className="fs-2"><span className="componentName">{title}</span></h3>
+                    <p>{description}</p>
                     <a href={link} className="btn btn-primary">
                         See Details
                     </a>
