@@ -3,6 +3,8 @@ import PageHeader from "../common/PageHeader";
 import DemoPageHeader from "../common/DemoPageHeader";
 import PageFooter from "../common/PageFooter";
 import {MSLoadingInfo} from "../common/ComponentInfo"
+import {MSLoadingType} from "../components/MSLoading";
+
 export const LoadingDemo = () => {
 
     const customMessage = "Read a book while you wait for the page to load"
@@ -17,11 +19,14 @@ export const LoadingDemo = () => {
                     componentPropsNames={MSLoadingInfo.propsNames}
                     componentPropsDescription={MSLoadingInfo.propsDescriptions}
                 />
-                <h6>1 - The default loading:</h6>
-                <MSLoading />
+                <h6>1 - The default loading with PULSE:</h6>
+                <MSLoading type={MSLoadingType.PULSE} />
                 <br/><br/>
-                <h6>2 - With a custom message:</h6>
-                <MSLoading customMessage={customMessage} />
+                <h6>2 - The default loading with LOAD:</h6>
+                <MSLoading type={MSLoadingType.LOAD} />
+                <br/><br/>
+                <h6>3 - With a custom message:</h6>
+                <MSLoading type={MSLoadingType.PULSE} customMessage={customMessage} />
             </div>
             <PageFooter />
         </div>

@@ -34,8 +34,8 @@ export const MSHorizontalListInfo:ComponentInfo = {
 export const MSLoadingInfo:ComponentInfo = {
     componentName : "<MSLoading>",
     componentDescription: "A simple loading component that can be used when the user is waiting for some operation to finish. Optionally a custom message can be added to it.",
-    propsNames : ["customMessage"],
-    propsDescriptions : ["A custom message to present to the user along with the default behavior. It can be leave empty."]
+    propsNames : ["type","customMessage"],
+    propsDescriptions : ["The type of the loading animation. It come from the MSLoadingType Enum.","A custom message to present to the user along with the default behavior. It can be leave empty."]
 }
 export const MSSimpleListInfo:ComponentInfo = {
     componentName : "<MSSimpleList>",
