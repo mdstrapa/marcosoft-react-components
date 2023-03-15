@@ -1,14 +1,10 @@
-import PageHeader from "../common/PageHeader";
 import {MSFormatteMessage, MessageStyle} from "../components/MSFormattedMessage";
 import DemoPageHeader from "../common/DemoPageHeader";
-import PageFooter from "../common/PageFooter";
 import {MSFormattedMessageInfo} from "../common/ComponentInfo"
 export const FormattedMessageDemo = () => {
 
     return(
-        <div id="body">
-            <PageHeader />
-            <div id="main">
+            <div>
                 <DemoPageHeader
                     componentName={MSFormattedMessageInfo.componentName}
                     componentDescription={MSFormattedMessageInfo.componentDescription}
@@ -29,7 +25,5 @@ export const FormattedMessageDemo = () => {
                 <MSFormatteMessage message="There was an error" style={MessageStyle.DANGER}/>
 
             </div>
-            <PageFooter />
-        </div>
     )
 }
