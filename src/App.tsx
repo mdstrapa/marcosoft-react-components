@@ -5,6 +5,7 @@ import {FormattedMessageDemo} from './demo/FormattedMessageDemo';
 import {LoadingDemo} from "./demo/LoadingDemo";
 import {HorizontalListDemo} from "./demo/HorizontalListDemo";
 import {CardDemo} from "./demo/CardDemo";
+import {ButtonsDemo} from "./demo/ButtonsDemo";
 import {Route, Routes} from 'react-router-dom';
 import Init from './Init';
 import PageHeader from "./common/PageHeader";
@@ -25,6 +26,7 @@ function App() {
                         <Route path="/loadingDemo" element={<LoadingDemo/>}/>
                         <Route path="/horizontalListDemo" element={<HorizontalListDemo/>}/>
                         <Route path="/cardDemo" element={<CardDemo/>}/>
+                        <Route path="/buttonsDemo" element={<ButtonsDemo/>}/>
                     </Routes>
                 </div>
                 <PageFooter/>

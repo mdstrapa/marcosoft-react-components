@@ -3,7 +3,7 @@ import PageFooter from "./common/PageFooter";
 import 'bootstrap/dist/css/bootstrap.css';
 import {MSCard} from "./components/MSCard";
 
-import {MSCardInfo} from "./common/ComponentInfo";
+import {MSButtonsInfo, MSCardInfo} from "./common/ComponentInfo";
 import {MSDynamicTableInfo} from "./common/ComponentInfo"
 import {MSFormattedMessageInfo} from "./common/ComponentInfo"
 import {MSHorizontalListInfo} from "./common/ComponentInfo"
@@ -42,6 +42,11 @@ const Init = () => {
                     <MSCard title={MSSimpleListInfo.componentName}
                             description={MSSimpleListInfo.componentDescription}
                             link="/simpleListDemo"/>
+                </div>
+                <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <MSCard title={MSButtonsInfo.componentName}
+                            description={MSButtonsInfo.componentDescription}
+                            link="/buttonsDemo"/>
                 </div>
             </div>
         </div>

@@ -35,11 +35,18 @@ export const MSLoadingInfo:ComponentInfo = {
     componentName : "<MSLoading>",
     componentDescription: "A simple loading component that can be used when the user is waiting for some operation to finish. Optionally a custom message can be added to it.",
     propsNames : ["type","customMessage"],
-    propsDescriptions : ["The type of the loading animation. It come from the MSLoadingType Enum.","A custom message to present to the user along with the default behavior. It can be leave empty."]
+    propsDescriptions : ["The type of the loading animation. It comes from the MSLoadingType Enum.","A custom message to present to the user along with the default behavior. It can be leave empty."]
 }
 export const MSSimpleListInfo:ComponentInfo = {
     componentName : "<MSSimpleList>",
     componentDescription: "A list that can render with or without links. It will render vertically. This component is very common among applications and super useful.",
     propsNames : ["items","links"],
     propsDescriptions : ["The values to create a list","The links associated to each value in the list"]
+}
+
+export const MSButtonsInfo:ComponentInfo = {
+    componentName : "<MSButtons>",
+    componentDescription: "A set of buttons.It can be used in forms, modal pop-us, template items such as cars or table rows.",
+    propsNames : ["labels","styles","actions"],
+    propsDescriptions : ["The label of the button","The style of each button. It comes from the MSButtonStyle Enum","The actual action that will take place when the user hits the button"]
 }
